@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+
+:root {
+    --black:#333333 ;
+    --light-black:#4F4F4F ;
+    --gray:#BDBDBD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 949px;
+    padding:20px 24px;
+    margin: 0 auto;
+    font-family: 'Space Mono', monospace;
+    color: var(--black);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;    
+}
+
+
+
+.img-div {
+    display: flex;
+}
+
+.img-div img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    margin-bottom: 30px;
+    }
+
+.content-info p {
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: -0.035em;
+text-align: left;
+width: 92%;
+margin-bottom: 66px;
+
+}
+
+button {
+width: 216px;
+height: 68px;
+background-color: var(--black);
+border: none;
+color: #fff;
+text-transform: uppercase;
+font-family: inherit;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: -0.035em;
+
+}
+
+footer {
+    bottom: 24px;
+    margin-top: auto;
+}
+
+.footer-content {
+    color: var(--gray);
+    text-align: center;
+    font-size: 14px;      
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+@media screen and (min-width:900px) {
+    .wrapper {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .img-div{
+        width:50%;
+    }
+
+    .content-info {
+        width: 50%;
+    }
+
+    .content-info h1 {
+        font-size: 64px;
+    }
+
+    .content-info p {
+        max-width: 330px;
+        font-size: 1.3em;
+    }
+    .container{
+        margin-top: auto;
+        
+    }
+}
+
+/* Study responsible design */
